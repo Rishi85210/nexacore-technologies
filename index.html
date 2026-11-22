@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCore Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Nexa<span class="accent">Core</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 Next-Generation Technology</div>
+      <h1>Engineering<br><span class="gradient-text">Tomorrow,</span><br>Today.</h1>
+      <p>NexaCore Technologies delivers cutting-edge AI, software, IoT and cloud solutions — built to simplify life and reshape the future.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#research" class="btn-outline">Our Research</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="num" data-target="120">0</span>+<p>Projects Delivered</p></div>
+        <div class="stat"><span class="num" data-target="40">0</span>+<p>Tech Partners</p></div>
+        <div class="stat"><span class="num" data-target="15">0</span>+<p>Countries Served</p></div>
+        <div class="stat"><span class="num" data-target="98">0</span>%<p>Client Satisfaction</p></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="section-header">
+      <span class="section-tag">What We Do</span>
+      <h2>Our <span class="accent">Services</span></h2>
+      <p>Comprehensive technology solutions powering the next era of innovation</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-delay="0">
+        <div class="card-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent systems, predictive analytics, NLP, and deep learning models tailored for real-world impact.</p>
+        <ul>
+          <li>Neural Network Design</li>
+          <li>Computer Vision</li>
+          <li>AI-driven Automation</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+      <div class="service-card featured" data-delay="100">
+        <div class="featured-badge">Most Popular</div>
+        <div class="card-icon"><i class="fas fa-code"></i></div>
+        <h3>Software Development</h3>
+        <p>Custom software, enterprise platforms, and digital products engineered for performance and scale.</p>
+        <ul>
+          <li>Web & Mobile Apps</li>
+          <li>API Integration</li>
+          <li>DevOps & CI/CD</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+      <div class="service-card" data-delay="200">
+        <div class="card-icon"><i class="fas fa-flask"></i></div>
+        <h3>Research & Development</h3>
+        <p>Pioneering new technology through rigorous R&D — turning bold ideas into breakthrough innovations.</p>
+        <ul>
+          <li>Applied Research</li>
+          <li>Prototype Development</li>
+          <li>Technology Feasibility</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+      <div class="service-card" data-delay="300">
+        <div class="card-icon"><i class="fas fa-microchip"></i></div>
+        <h3>IoT & Smart Devices</h3>
+        <p>Connected ecosystems and smart device solutions bridging the physical and digital worlds.</p>
+        <ul>
+          <li>Embedded Systems</li>
+          <li>Smart Home Solutions</li>
+          <li>Industrial IoT</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+      <div class="service-card" data-delay="400">
+        <div class="card-icon"><i class="fas fa-cloud"></i></div>
+        <h3>Cloud & Infrastructure</h3>
+        <p>Scalable, secure cloud architectures for modern businesses — from migration to management.</p>
+        <ul>
+          <li>Multi-cloud Strategy</li>
+          <li>Security & Compliance</li>
+          <li>24/7 Managed Services</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+      <div class="service-card" data-delay="500">
+        <div class="card-icon"><i class="fas fa-robot"></i></div>
+        <h3>Consulting & Strategy</h3>
+        <p>Expert technology consulting to align your business goals with the right digital transformation path.</p>
+        <ul>
+          <li>Digital Transformation</li>
+          <li>Tech Stack Advisory</li>
+          <li>Innovation Workshops</li>
+        </ul>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="research">
+    <div class="research-bg"></div>
+    <div class="section-header">
+      <span class="section-tag">Innovation Lab</span>
+      <h2>Cutting-Edge <span class="accent">Research</span></h2>
+      <p>Pushing the boundaries of what's possible — today and beyond</p>
+    </div>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="r-icon">🧬</div>
+        <h3>BioTech AI</h3>
+        <p>Applying AI to healthcare, genomics and drug discovery to accelerate medical breakthroughs.</p>
+        <div class="progress-bar"><div class="progress" style="width: 78%"></div></div>
+        <span class="progress-label">78% Progress</span>
+      </div>
+      <div class="research-card">
+        <div class="r-icon">⚡</div>
+        <h3>Green Energy Systems</h3>
+        <p>Smart energy grids and AI-optimized renewable energy management systems for sustainable living.</p>
+        <div class="progress-bar"><div class="progress" style="width: 62%"></div></div>
+        <span class="progress-label">62% Progress</span>
+      </div>
+      <div class="research-card">
+        <div class="r-icon">🌐</div>
+        <h3>Quantum Computing</h3>
+        <p>Exploring quantum algorithms and their applications in cryptography, optimization, and simulation.</p>
+        <div class="progress-bar"><div class="progress" style="width: 45%"></div></div>
+        <span class="progress-label">45% Progress</span>
+      </div>
+      <div class="research-card">
+        <div class="r-icon">🤖</div>
+        <h3>Autonomous Systems</h3>
+        <p>Self-driving vehicles, drones, and robotic agents powered by our proprietary AI frameworks.</p>
+        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+        <span class="progress-label">85% Progress</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <div class="about-text">
+        <span class="section-tag">Who We Are</span>
+        <h2>Driven by <span class="accent">Purpose</span>,<br>Powered by <span class="accent">Innovation</span></h2>
+        <p>NexaCore Technologies was founded with a singular mission: to harness the power of technology to make everyday life easier, smarter, and more connected.</p>
+        <p>Our multidisciplinary team of engineers, researchers, and strategists collaborate across AI, cloud, IoT, and software — building solutions that don't just meet today's needs, but anticipate tomorrow's challenges.</p>
+        <div class="values">
+          <div class="value-item"><i class="fas fa-lightbulb"></i><div><h4>Innovation First</h4><p>We challenge the status quo, every single day.</p></div></div>
+          <div class="value-item"><i class="fas fa-shield-alt"></i><div><h4>Trusted & Secure</h4><p>Security and reliability are never an afterthought.</p></div></div>
+          <div class="value-item"><i class="fas fa-users"></i><div><h4>People-Centric</h4><p>Technology that serves people, not the other way around.</p></div></div>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="image-frame">
+          <div class="glow-ring"></div>
+          <img src="about_team.png" alt="NexaCore Team" onerror="this.style.display='none'"/>
+          <div class="image-overlay">
+            <div class="overlay-stat"><h3>2019</h3><p>Founded</p></div>
+            <div class="overlay-stat"><h3>200+</h3><p>Team Members</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Let's Build the <span class="accent">Future</span> Together</h2>
+      <p>Have a project in mind? Let's talk about how NexaCore can help.</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><h4>Location</h4><p>Innovation Hub, Tech City</p></div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <div><h4>Email</h4><p>hello@nexacore.tech</p></div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <div><h4>Phone</h4><p>+1 (800) NEXACORE</p></div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" placeholder="Subject" required />
+        <select>
+          <option value="">Select Service</option>
+          <option>AI & Machine Learning</option>
+          <option>Software Development</option>
+          <option>Research & Development</option>
+          <option>IoT & Smart Devices</option>
+          <option>Cloud & Infrastructure</option>
+          <option>Consulting & Strategy</option>
+        </select>
+        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        <div id="form-success" class="form-success" style="display:none">✅ Message sent! We'll get back to you within 24 hours.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Nexa<span class="accent">Core</span></span>
+        <p>Engineering Tomorrow, Today.</p>
+      </div>
+      <div class="footer-links">
+        <div class="f-col"><h4>Company</h4><a href="#home">Home</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+        <div class="f-col"><h4>Services</h4><a href="#services">AI & ML</a><a href="#services">Software Dev</a><a href="#services">IoT</a><a href="#services">Cloud</a></div>
+        <div class="f-col"><h4>Research</h4><a href="#research">BioTech AI</a><a href="#research">Green Energy</a><a href="#research">Quantum</a><a href="#research">Autonomous</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCore Technologies. All rights reserved.</p>
+      <p>Built with ❤️ for a smarter world.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
